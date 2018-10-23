@@ -8,7 +8,7 @@ namespace _003.Distinct
         static void Main(string[] args)
         {
             int[] nums = { 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5 };
-           int[] result =Distinct(nums);
+            int[] result = Distinct(nums);
             for (int i = 0; i < result.Length; i++)
             {
                 WriteLine(result[i]);
@@ -23,7 +23,7 @@ namespace _003.Distinct
         static int[] Distinct(int[] arr)
         {
             int i = 0, j = 0;
-            while (++j<arr.Length)
+            while (++j < arr.Length)
             {
                 if (arr[i] != arr[j])
                     arr[++i] = arr[j];
